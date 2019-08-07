@@ -34,7 +34,7 @@ class Login extends PureComponent {
             user_name: values.user_name,
             captcha_code: values.captcha_code,
             captcha_id: login.captchaID,
-            password: md5Hash(values.password),
+            password: values.password,
           },
         });
       }

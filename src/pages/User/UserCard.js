@@ -16,9 +16,6 @@ class UserCard extends PureComponent {
       if (!err) {
         const formData = { ...values };
         formData.status = parseInt(formData.status, 10);
-        if (formData.password && formData.password !== '') {
-          formData.password = md5Hash(formData.password);
-        }
         onSubmit(formData);
       }
     });

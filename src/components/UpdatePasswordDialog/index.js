@@ -23,8 +23,8 @@ class UpdatePasswordDialog extends PureComponent {
 
       this.setState({ submitting: true });
       const formData = {
-        old_password: md5Hash(values.old_password),
-        new_password: md5Hash(values.new_password),
+        old_password: values.old_password,
+        new_password: values.new_password,
       };
       updatePwd(formData).then(res => {
         if (res.status === 'OK') {
