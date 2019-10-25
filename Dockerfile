@@ -9,3 +9,5 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
 
 RUN apt update && apt install -y --no-install-recommends \
       yarn
+
+RUN yarn global add umi
