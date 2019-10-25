@@ -2,12 +2,14 @@ version: '3.3'
 
 services:
   reporter-react:
-    image: node:carbon
+    build:
+      context: .
+      dockerfile: Dockerfile
     restart: always
     ports:
       - "22783:80"
       - "22784:8000"
     volumes:
-      - .:/opt
-    working_dir: /opt
-    command: bash -c "npm install && npm start"
+      - .:/app
+    working_dir: /app
+    command: bash -c "yarn install && yarn run start"
