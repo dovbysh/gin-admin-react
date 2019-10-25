@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  reporter-react:
+    image: node:carbon
+    restart: always
+    ports:
+      - "22783:80"
+      - "22784:8000"
+    volumes:
+      - .:/opt
+    working_dir: /opt
+    command: bash -c "npm install && npm start"
