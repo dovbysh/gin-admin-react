@@ -87,7 +87,7 @@ class MenuCard extends PureComponent {
           <Form>
             <Row>
               <Col span={12}>
-                <Form.Item {...formItemLayout} label="菜单名称">
+                <Form.Item {...formItemLayout} label="Название">
                   {getFieldDecorator('name', {
                     initialValue: formData.name,
                     rules: [
@@ -118,7 +118,7 @@ class MenuCard extends PureComponent {
             </Row>
             <Row>
               <Col span={12}>
-                <Form.Item {...formItemLayout} label="菜单图标">
+                <Form.Item {...formItemLayout} label="CSS класс иконки">
                   <Row>
                     <Col span={20}>
                       {getFieldDecorator('icon', {
@@ -140,7 +140,7 @@ class MenuCard extends PureComponent {
                 </Form.Item>
               </Col>
               <Col span={12}>
-                <Form.Item {...formItemLayout} label="访问路由">
+                <Form.Item {...formItemLayout} label="URI">
                   {getFieldDecorator('router', {
                     initialValue: formData.router,
                   })(<Input placeholder="请输入" />)}
@@ -149,7 +149,7 @@ class MenuCard extends PureComponent {
             </Row>
             <Row>
               <Col span={12}>
-                <Form.Item {...formItemLayout} label="排序值">
+                <Form.Item {...formItemLayout} label="Порядоковый номер">
                   {getFieldDecorator('sequence', {
                     initialValue: formData.sequence ? formData.sequence.toString() : '1000000',
                     rules: [

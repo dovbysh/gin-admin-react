@@ -189,7 +189,7 @@ class MenuList extends PureComponent {
       <Form onSubmit={this.onSearchFormSubmit} layout="inline">
         <Row gutter={8}>
           <Col span={8}>
-            <Form.Item label="菜单名称">
+            <Form.Item label="Название">
               {getFieldDecorator('name')(<Input placeholder="请输入" />)}
             </Form.Item>
           </Col>
@@ -237,12 +237,12 @@ class MenuList extends PureComponent {
 
     const columns = [
       {
-        title: '菜单名称',
+        title: 'Название',
         dataIndex: 'name',
         width: 150,
       },
       {
-        title: '排序值',
+        title: 'Порядоковый номер',
         dataIndex: 'sequence',
         width: 100,
       },
@@ -259,12 +259,12 @@ class MenuList extends PureComponent {
         },
       },
       {
-        title: '菜单图标',
+        title: 'CSS класс иконки',
         dataIndex: 'icon',
         width: 100,
       },
       {
-        title: '访问路由',
+        title: 'URI',
         dataIndex: 'router',
       },
     ];

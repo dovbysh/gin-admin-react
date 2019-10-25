@@ -25,25 +25,25 @@ export default class MenuAction extends PureComponent {
 
     this.columns = [
       {
-        title: '资源编号',
+        title: 'Код ресурса меню',
         dataIndex: 'code',
         editable: true,
         width: '20%',
       },
       {
-        title: '资源名称',
+        title: 'Имя ресурса меню',
         dataIndex: 'name',
         editable: true,
         width: '22%',
       },
       {
-        title: '请求方式',
+        title: 'method',
         dataIndex: 'method',
         editable: true,
         width: '15%',
       },
       {
-        title: '请求路径',
+        title: 'Путь ресурса меню',
         dataIndex: 'path',
         editable: true,
       },

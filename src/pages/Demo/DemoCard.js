@@ -78,7 +78,7 @@ class DemoCard extends PureComponent {
               ],
             })(<Input placeholder="请输入名称" />)}
           </Form.Item>
-          <Form.Item {...formItemLayout} label="备注">
+          <Form.Item {...formItemLayout} label="Заметки">
             {getFieldDecorator('memo', {
               initialValue: formData.memo,
             })(<Input.TextArea rows={2} placeholder="请输入备注" />)}

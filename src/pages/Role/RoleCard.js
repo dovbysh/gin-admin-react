@@ -63,7 +63,7 @@ class RoleCard extends PureComponent {
         <Form>
           <Row>
             <Col>
-              <Form.Item {...formItemLayout} label="角色名称">
+              <Form.Item {...formItemLayout} label="Название роли">
                 {getFieldDecorator('name', {
                   initialValue: formData.name,
                   rules: [
@@ -76,7 +76,7 @@ class RoleCard extends PureComponent {
               </Form.Item>
             </Col>
             <Col>
-              <Form.Item {...formItemLayout} label="排序值">
+              <Form.Item {...formItemLayout} label="Порядоковый номер">
                 {getFieldDecorator('sequence', {
                   initialValue: formData.sequence ? formData.sequence.toString() : '1000000',
                   rules: [
@@ -89,7 +89,7 @@ class RoleCard extends PureComponent {
               </Form.Item>
             </Col>
             <Col>
-              <Form.Item {...formItemLayout} label="备注">
+              <Form.Item {...formItemLayout} label="Заметки">
                 {getFieldDecorator('memo', {
                   initialValue: formData.memo,
                 })(<Input.TextArea rows={2} placeholder="请输入备注" />)}

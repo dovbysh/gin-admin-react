@@ -49,7 +49,10 @@ export default {
   },
   proxy: {
     '/api/': {
-      target: 'http://127.0.0.1:10088/',
+//      target: 'http://reporter-api:80/',
+      target: 'http://172.30.0.202:22782/',
+//      target: 'http://172.17.0.1:22882/',
+//      target: 'http://172.17.0.1:22782/',
       changeOrigin: true,
     },
   },

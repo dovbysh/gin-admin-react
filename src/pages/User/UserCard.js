@@ -58,7 +58,7 @@ class UserCard extends PureComponent {
         bodyStyle={{ maxHeight: 'calc( 100vh - 158px )', overflowY: 'auto' }}
       >
         <Form>
-          <Form.Item {...formItemLayout} label="用户名">
+          <Form.Item {...formItemLayout} label="Имя пользователя">
             {getFieldDecorator('user_name', {
               initialValue: formData.user_name,
               rules: [
@@ -85,7 +85,7 @@ class UserCard extends PureComponent {
               />
             )}
           </Form.Item>
-          <Form.Item {...formItemLayout} label="真实姓名">
+          <Form.Item {...formItemLayout} label="Реальное имя пользователя">
             {getFieldDecorator('real_name', {
               initialValue: formData.real_name,
               rules: [
@@ -117,12 +117,12 @@ class UserCard extends PureComponent {
               </Radio.Group>
             )}
           </Form.Item>
-          <Form.Item {...formItemLayout} label="邮箱">
+          <Form.Item {...formItemLayout} label="email">
             {getFieldDecorator('email', {
               initialValue: formData.email,
             })(<Input placeholder="请输入邮箱" />)}
           </Form.Item>
-          <Form.Item {...formItemLayout} label="手机号">
+          <Form.Item {...formItemLayout} label="телефон">
             {getFieldDecorator('phone', {
               initialValue: formData.phone,
             })(<Input placeholder="请输入手机号" />)}

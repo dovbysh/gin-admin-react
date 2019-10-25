@@ -152,7 +152,7 @@ class RoleList extends PureComponent {
       <Form onSubmit={this.handleSearchFormSubmit} layout="inline">
         <Row gutter={16}>
           <Col md={8} sm={24}>
-            <Form.Item label="角色名称">
+            <Form.Item label="Название роли">
               {getFieldDecorator('name')(<Input placeholder="请输入" />)}
             </Form.Item>
           </Col>
@@ -185,12 +185,12 @@ class RoleList extends PureComponent {
 
     const columns = [
       {
-        title: '角色名称',
+        title: 'Название роли',
         dataIndex: 'name',
         width: 200,
       },
       {
-        title: '排序值',
+        title: 'Порядоковый номер',
         dataIndex: 'sequence',
         width: 100,
       },

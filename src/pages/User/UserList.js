@@ -173,12 +173,12 @@ class UserList extends PureComponent {
       <Form onSubmit={this.onSearchFormSubmit}>
         <Row gutter={16}>
           <Col span={8}>
-            <Form.Item label="用户名">
+            <Form.Item label="Имя пользователя">
               {getFieldDecorator('user_name')(<Input placeholder="请输入" />)}
             </Form.Item>
           </Col>
           <Col span={8}>
-            <Form.Item label="真实姓名">
+            <Form.Item label="Реальное имя пользователя">
               {getFieldDecorator('real_name')(<Input placeholder="请输入" />)}
             </Form.Item>
           </Col>
@@ -226,15 +226,15 @@ class UserList extends PureComponent {
     const { selectedRows, selectedRowKeys } = this.state;
     const columns = [
       {
-        title: '用户名',
+        title: 'Имя пользователя',
         dataIndex: 'user_name',
       },
       {
-        title: '真实姓名',
+        title: 'Реальное имя пользователя',
         dataIndex: 'real_name',
       },
       {
-        title: '角色名称',
+        title: 'Название роли',
         dataIndex: 'roles',
         render: val => {
           if (!val || val.length === 0) {
@@ -258,15 +258,15 @@ class UserList extends PureComponent {
         },
       },
       {
-        title: '邮箱',
+        title: 'email',
         dataIndex: 'email',
       },
       {
-        title: '手机号',
+        title: 'телефон',
         dataIndex: 'phone',
       },
       {
-        title: '创建时间',
+        title: 'Создано в',
         dataIndex: 'created_at',
         render: val => <span>{formatDate(val, 'YYYY-MM-DD HH:mm')}</span>,
       },

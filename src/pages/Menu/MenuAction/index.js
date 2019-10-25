@@ -24,13 +24,13 @@ export default class MenuAction extends PureComponent {
 
     this.columns = [
       {
-        title: '动作编号',
+        title: 'Системное имя (код)',
         dataIndex: 'code',
         editable: true,
         width: '40%',
       },
       {
-        title: '动作名称',
+        title: 'Человекопонятное имя',
         dataIndex: 'name',
         editable: true,
         width: '45%',

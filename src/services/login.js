@@ -1,6 +1,6 @@
 import request, { baseURL } from '../utils/request';
 
-// 验证码ID
+// Идентификатор картинки капчи
 export async function captchaID() {
   return request(`/v1/login/captchaid`);
 }
@@ -26,7 +26,7 @@ export async function logout() {
   });
 }
 
-// 更新个人密码
+// Изменить пароль
 export async function updatePwd(params) {
   return request(`/v1/current/password`, {
     method: 'PUT',
@@ -34,12 +34,12 @@ export async function updatePwd(params) {
   });
 }
 
-// 获取当前用户信息
+// Информация о текущем пользователе
 export async function getCurrentUser() {
   return request(`/v1/current/user`);
 }
 
-// 查询当前用户菜单树
+// Запрос доступных пользователю пунктов меню
 export async function queryMenuTree() {
   return request(`/v1/current/menutree`);
 }

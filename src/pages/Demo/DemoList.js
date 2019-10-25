@@ -218,7 +218,7 @@ class DemoList extends PureComponent {
         dataIndex: 'name',
       },
       {
-        title: '备注',
+        title: 'Заметки',
         dataIndex: 'memo',
       },
       {
@@ -232,7 +232,7 @@ class DemoList extends PureComponent {
         },
       },
       {
-        title: '创建时间',
+        title: 'Создано в',
         dataIndex: 'created_at',
         render: val => <span>{formatDate(val, 'YYYY-MM-DD HH:mm')}</span>,
       },
